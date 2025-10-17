@@ -11,42 +11,40 @@
     <body class="bg-orange-50">    
     <!----buy now and customize buttons--->
     <section>
-        <div class="fixed top-1/3 right-0 flex flex-col space-y-2 z-10">
-            <button class="bg-blue-600 text-white px-2 py-2 md:px-4 md:py-2 hover:bg-blue-700 transition text-sm md:text-base">
-                <i class="fa-solid fa-cart-shopping pr-1"></i>Buy Now</button>
+        <div class="fixed top-1/3 right-0 flex flex-col space-y-2">
+            <button class="bg-blue-600 text-white px-4 py-2 hover:bg-blue-700 transition">
+                <i class="fa-solid fa-cart-shopping pr-1 mx-2"></i>Buy Now</button>
 
-            <button class="bg-white px-2 py-2 md:px-4 md:py-2 hover:text-blue-600 transition text-sm md:text-base">
-                <i class="fa-solid fa-palette pr-1"></i>Customize
+            <button class="bg-white px-4 py-2 hover:text-blue-600 transition">
+                <i class="fa-solid fa-palette pr-1 mx-2"></i>Customize
             </button>
         </div>
     </section>
     <section class=" rounded-3xl m-18 md:m-15 bg-[url('hero-bg.jpg')] bg-cover min-h-[650px]">
        <div class="bg-black/50 bg-cover flex flex-col justify-around items-center text-white rounded-3xl h-auto min-h-[650px]  ">
-       <header class="relative flex flex-col md:flex-row justify-between items-center w-full py-2 px-4 md:px-8">
+       <header class="flex gap-25 justify-between text-white items-right pl-15 py-2 md:pl-20 py-0">
                 <!-- Logo -->
-                <div class="mb-2 md:mb-0">
-                    <img src="site-logo.svg" alt="logo" class="h-8 md:h-10">
+                <div class="">
+                    <img class="" src="site-logo.svg" alt="logo" width="">
                 </div>
-                <!-- Menu Icon -->
-                <button id="menu-toggle" class="absolute top-4 right-4 text-white text-2xl"><i class="fas fa-bars"></i></button>
                 <!-- Nav Links -->
-                <nav id="nav-menu" class="hidden md:flex md:flex-row md:space-x-4 lg:space-x-8 font-medium absolute top-0 right-0 md:relative bg-black/70 md:bg-transparent p-4 md:p-0 rounded-lg md:rounded-none flex flex-col space-y-2 md:space-y-0 md:grid-cols-none">
-                    <a class="hover:text-[#34A0A4] transition-colors duration-300 text-white md:text-white" href="#">Home</a>
-                    <a class="hover:text-[#34A0A4] transition-colors duration-300 text-white md:text-white" href="./about.html">About</a>
-                    <a class="hover:text-[#34A0A4] transition-colors duration-300 text-white md:text-white" href="./service.html">Services</a>
-                    <a class="hover:text-[#34A0A4] transition-colors duration-300 text-white md:text-white" href="./properties.html">Properties</a>
-                    <a class="hover:text-[#34A0A4] transition-colors duration-300 text-white md:text-white" href="./contact.html">Contact</a>
+                <nav class="hidden sm:hidden lg:flex md:flex space-x-4 space-x-8 font-medium pl-25">
+                    <a class="hover:text-[#34A0A4]" href="#">Home</a>
+                    <a class="hover:text-[#34A0A4]" href="./about.html">About</a>
+                    <a class="hover:text-[#34A0A4]" href="./service.html">Services</a>
+                    <a class="hover:text-[#34A0A4]" href="./properties.html">Properties</a>
+                    <a class="hover:text-[#34A0A4]" href="./contact.html">Contact</a>
                 </nav>
                 <!-- Social Icons -->
-                <div class="flex space-x-4 mt-2 md:mt-0">
+                <div class="flex sm:flex-row sm:p-2 lg:display space-x-4">
                     <a href="#" class="hover:text-[#34A0A4] transition-colors duration-300"><i class="fab fa-twitter"></i></a>
                     <a href="#" class="hover:text-[#34A0A4] transition-colors duration-300"><i class="fab fa-pinterest-p"></i></a>
                     <a href="#" class="hover:text-[#34A0A4] transition-colors duration-300"><i class="fab fa-youtube"></i></a>
                     <a href="#" class="hover:text-[#34A0A4] transition-colors duration-300"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="hover:text-[#34A0A4] transition-colors duration-300"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#" class="hover:text-[#34A0A4] transition-colors duration-300"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="hover:text-[#34A0A4] transition-colors duration-300"><i class="fab fa-whatsapp"></i></a>
-                    <a href="#" class="hover:text-[#34A0A4] transition-colors duration-300"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin-in hover:text-[#34A0A4] transition-colors duration-300"></i>
+                    <a href=""><i class="fab fa-facebook-f  hover:text-[#34A0A4] transition-colors duration-300"></i>
+                    <a href=""><i class="fab fa-whatsapp  hover:text-[#34A0A4] transition-colors duration-300"></i>
+                    <a href=""><i class="fa-solid fa-magnifying-glass  hover:text-[#34A0A4] transition-colors duration-300"></i>
                 </div>
             </header>
    
@@ -325,14 +323,6 @@
     </div>
     <script>
      document.getElementById('copyright-year').textContent = new Date().getFullYear();
-     </script>
-     <script>
-     const menuToggle = document.getElementById('menu-toggle');
-     const navMenu = document.getElementById('nav-menu');
-
-     menuToggle.addEventListener('click', () => {
-         navMenu.classList.toggle('hidden');
-     });
      </script>
 </div>
 <p class="px-5 mb-2 text-gray-500 text-sm">Developed by... <i class="text-sm">_KHANAM</i></p>
